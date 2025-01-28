@@ -41,14 +41,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <style>
-        .modal-header .centered-img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    </style>
-
 </head>
 
 <body>
@@ -95,17 +87,17 @@
 
                 <div class="col-md-6">
 				
-                    <h1>Roberto Mallorca Jr.</h1>
-                    <div class="page-scroll">
-                        <p class="job-title">Full Stack Developer</p>
-                        <a href="#contact" class="btn btn-fill ">Hire me</a>
+                    <h1 id="hero-title" class="typing">Roberto Mallorca Jr.</h1>
+                    <div class="page-scroll" id="hero-content">
+                        <p class="job-title delayed-fade-in">Full Stack Developer</p>
+                        <a href="#contact" class="btn btn-fill delayed-fade-in">Hire me</a>
                         <div class="clearfix visible-xxs"></div>
-                        <a href="#portfolio" class="btn btn-border">Explore more</a>
+                        <a href="#portfolio" class="btn btn-border delayed-fade-in">Explore more</a>
                     </div>
                 </div>
             
                 <div class="col-md-6 text-right">
-                    <img src="assets/img/mypic.png" alt="Roberto Mallorca Jr.">
+                    <img src="assets/img/mypic.png" alt="Roberto Mallorca Jr." class="mypic">
                 </div>
 
             </div>
@@ -241,53 +233,57 @@
                 <div class="skill">
                     <h4>HTML5/CSS3</h4>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" data-transitiongoal="95"></div><!-- /.progress-bar -->
-                    </div><!-- /.progress -->
-                </div><!-- /.skill -->
+                        <div class="progress-bar" role="progressbar" data-transitiongoal="95"></div>
+                    </div>
+                </div>
                 <div class="skill">
                     <h4>PHP</h4>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" data-transitiongoal="57"></div><!-- /.progress-bar -->
-                    </div><!-- /.progress -->
-                </div><!-- /.skill -->
+                        <div class="progress-bar" role="progressbar" data-transitiongoal="57"></div>
+                    </div>
+                </div>
                 <div class="skill">
                     <h4>VBA</h4>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" data-transitiongoal="65"></div><!-- /.progress-bar -->
-                    </div><!-- /.progress -->
-                </div><!-- /.skill -->
+                        <div class="progress-bar" role="progressbar" data-transitiongoal="65"></div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-4">
                 <div class="skill">
                     <h4>JavaScript</h4>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" data-transitiongoal="55"></div><!-- /.progress-bar -->
-                    </div><!-- /.progress -->
-                </div><!-- /.skill -->
+                        <div class="progress-bar" role="progressbar" data-transitiongoal="55"></div>
+                    </div>
+                </div>
                 <div class="skill">
                     <h4>Node.js</h4>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" data-transitiongoal="50"></div><!-- /.progress-bar -->
-                    </div><!-- /.progress -->
-                </div><!-- /.skill -->
+                        <div class="progress-bar" role="progressbar" data-transitiongoal="50"></div>
+                    </div>
+                </div>
                 <div class="skill">
                     <h4>PostgreSQL</h4>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" data-transitiongoal="40"></div><!-- /.progress-bar -->
-                    </div><!-- /.progress -->
-                </div><!-- /.skill -->
+                        <div class="progress-bar" role="progressbar" data-transitiongoal="40"></div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-4">
                 <div class="skill">
                     <h4>React</h4>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" data-transitiongoal="45"></div><!-- /.progress-bar -->
-                    </div><!-- /.progress -->
-                </div><!-- /.skill -->
+                        <div class="progress-bar" role="progressbar" data-transitiongoal="45"></div>
+                    </div>
+                </div>
                 <div class="skill">
                     <h4>Angular</h4>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" data-transitiongoal="40"></div><!-- /.progress-bar -->
+                        <div class="progress-bar" role="progressbar" data-transitiongoal="40"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section><!-- /.secton-skills -->
 
@@ -365,19 +361,19 @@
 </section><!-- /.secton-portfolio -->
 
         <section class="site-section section-counters text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-xs-12">
-                        <p class="counter start" data-to="0" data-speed="2000">0</p>
-                        <h4>Years Experience</h4>
-                    </div>
-                    <div class="col-sm-6 col-xs-12">
-                        <p class="counter start" data-to="0" data-speed="2000">0</p>       
-                        <h4>Projects Delivered</h4>      
-                    </div>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-xs-12">
+                <p class="counter">1.2</p> <!-- Fixed number for Years Experience -->
+                <h4>Years Experience</h4>
             </div>
-        </section><!-- /.section-counters -->
+            <div class="col-sm-6 col-xs-12">
+                <p class="counter">2</p> <!-- Fixed number for Projects Delivered -->
+                <h4>Projects Delivered</h4>
+            </div>
+        </div>
+    </div>
+</section><!-- /.section-counters -->
 
         <section id="contact" class="site-section section-form text-center" style="padding: 100px 0;">
     <div class="container">
@@ -507,11 +503,13 @@
     </div>
 </div>
 
+
+
 <!-- Footer -->
 <footer id="footer" class="site-footer">
     <div class="container">
         <div class="row">
-            <div class="col-sm-4 col-xs-12">
+            <div class="col-sm-4 col-xs-12 text-left"> <!-- Added text-left class -->
                 <a class="icon facebook-bg" href="https://www.facebook.com/JneMallorca"><i class="icon-facebook"></i></a>
                 <a class="icon linkedin-bg" href="https://www.linkedin.com/in/roberto-mallorca-10649b1aa/"><i class="icon-linkedin"></i></a>
             </div>
@@ -538,51 +536,5 @@
 <script src="assets/js/jquery.countTo.min.js"></script>
 <script src="assets/js/script.js"></script>
 
-<!-- Add this script to handle modal navigation -->
-<script>
-    const certifications = [
-        'assets/img/cert1.png',
-        'assets/img/cert2.png',
-        'assets/img/cert3.png',
-        'assets/img/cert4.png',
-        'assets/img/cert5.png',
-        'assets/img/cert6.png',
-        'assets/img/cert7.png',
-        'assets/img/cert8.png',
-        'assets/img/cert9.png',
-        'assets/img/cert10.png',
-        'assets/img/cert11.png'
-    ];
-
-    let currentCertificationIndex = 0;
-
-    function showCertification(index) {
-        currentCertificationIndex = index;
-        document.getElementById('certificationImage').src = certifications[index];
-        $('#certificationModal').modal('show');
-    }
-
-    document.getElementById('prevCertification').addEventListener('click', function() {
-        if (currentCertificationIndex > 0) {
-            showCertification(currentCertificationIndex - 1);
-        } else {
-            showCertification(certifications.length - 1);
-        }
-    });
-
-    document.getElementById('nextCertification').addEventListener('click', function() {
-        if (currentCertificationIndex < certifications.length - 1) {
-            showCertification(currentCertificationIndex + 1);
-        } else {
-            showCertification(0);
-        }
-    });
-
-    document.querySelectorAll('[data-target="#certificationModal"]').forEach((element, index) => {
-        element.addEventListener('click', function() {
-            showCertification(index);
-        });
-    });
-</script>
 </body>
 </html>

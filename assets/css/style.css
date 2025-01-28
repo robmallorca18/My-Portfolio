@@ -443,6 +443,20 @@ html, body {
     text-align: center;
 }
 
+.modal-dialog-centered {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 1rem);
+}
+.modal-dialog-centered::before {
+    content: "";
+    display: block;
+    height: calc(100vh - 1rem);
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+}
+
 /* Section: Counters */
 .section-counters {
     background: url(../img/counters-bg.jpg) no-repeat fixed center / cover;
@@ -538,4 +552,119 @@ a.icon-up-bg:hover {color: #212121;}
     .hero h1 {
         margin-top: 20px;
     }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes dragFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(-10%);
+        opacity: 1;
+    }
+    80% {
+        transform: translateX(5%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.mypic {
+    animation: dragFromRight 2.5s ease-out;
+    animation-play-state: paused; /* Initially paused */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in forwards;
+    opacity: 1;
+}
+
+.typing {
+    border-right: .15em solid #000;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+.delayed-fade-in {
+    opacity: 0;
+}
+
+.modal-header .centered-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal-dialog-centered {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 1rem);
+}
+.modal-dialog-centered::before {
+    content: "";
+    display: block;
+    height: calc(100vh - 1rem);
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+}
+
+/* Add this CSS to ensure the footer is visible */
+#footer {
+    background: #353333;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #e7e7e7;
+    position: relative;
+    z-index: 10;
+}
+#footer .icon {
+    margin: 0 1px; /* Reduced margin to make icons closer */
+    color: #555;
+    background-color: #0c7da3; /* Light blue background color */
+    padding: 10px;
+    border-radius: 50%;
+}
+#footer .icon:hover {
+    color: #333;
+}
+#footer .icon-up-bg {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+#footer .icon-up-bg:hover {
+    background: #5784e6;
 }
